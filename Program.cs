@@ -1,4 +1,5 @@
-﻿using ConsoleApp1.Binding;
+﻿using ConsoleApp1.Abstraction;
+using ConsoleApp1.Binding;
 using ConsoleApp1.Built_In_Interface;
 using ConsoleApp1.ExampleOneInterface;
 using ConsoleApp1.ExampleTwoInterface;
@@ -243,6 +244,32 @@ namespace ConsoleApp1
             //}
 
             #endregion
+
+            #endregion
+
+            #region Abstracion
+
+            //Shape shape = new Shape();
+            // Invaild
+
+            Rectangle rect= new Rectangle() {Dim01 = 5 , Dim02 = 10};
+
+            decimal area = rect.CalcArea();
+            Console.WriteLine($"Area: { area }");
+
+            decimal rectPar = rect.Perimeter;
+            Console.WriteLine(rectPar);
+            Console.WriteLine("++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("++++++++++++++++++++++++++++++++++");
+
+            Circle C = new Circle(10);
+
+            Console.WriteLine($"Area {C.CalcArea()}");
+
+            decimal Per = C.Perimeter;
+            Console.WriteLine(Per);
+
+
 
             #endregion
         }
