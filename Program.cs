@@ -213,6 +213,37 @@ namespace ConsoleApp1
 
             #endregion
 
+            #region IComparable<T>()
+
+            //int[] numbers = { 6, 3, 1, 2, 5, 4 };
+
+            //User[] users = {
+            //    new User() {Id = 10, Name = "Hamza", Salary = 50000},
+            //    new User() {Id = 20, Name = "Omar", Salary = 60000},
+            //    new User() {Id = 30, Name = "Mona", Salary = 55000},
+            //    new User() {Id = 40, Name = "Noor", Salary = 70000}
+            //};
+
+
+
+            //Array.Sort(users);
+            //for (int i = 0; i < users.Length; i++)
+            //{
+            //    Console.WriteLine(users[i]);
+            //}
+
+            #endregion
+
+            #region IComparer
+
+            //Array.Sort (users, new UserNameCompare());
+            //for (int i = 0; i < users.Length; i++)
+            //{
+            //    Console.WriteLine(users[i]);
+            //}
+
+            #endregion
+
             #endregion
         }
     }
