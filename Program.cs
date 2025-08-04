@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1.Binding;
+using ConsoleApp1.ExampleOneInterface;
 using ConsoleApp1.Interface;
 
 namespace ConsoleApp1
@@ -34,6 +35,24 @@ namespace ConsoleApp1
         }
 
         #endregion
+
+        #region Interface example
+
+        static void SeriesToPrintFiveNumbers(ISeries series)
+        {
+            if (series is not null)
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine(series.Current);
+                    series.GetNext();
+                }
+                series.Reset();
+            }
+            else return;
+        }
+
+        #endregion 
 
         static void Main(string[] args)
         {
@@ -104,6 +123,25 @@ namespace ConsoleApp1
             //type.MyProperty = 10;
             //type.MyMethod();
             //type.print(); // Default Method => error => you cannot call default method from interface reference
+
+            #endregion
+
+            #region Interface exmple 01
+
+            /*
+             * 
+             *  Series
+             *  Property to carry current value
+             *  method to get next value
+             *  Method to reset series
+             * 
+             */
+
+            //SeriesOne S1 = new SeriesOne();
+            //SeriesTwo S2 = new SeriesTwo();
+
+            ////SeriesToPrintFiveNumbers(S1);
+            //SeriesToPrintFiveNumbers(S2);
 
             #endregion 
         }
