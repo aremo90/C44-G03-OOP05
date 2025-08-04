@@ -1,5 +1,6 @@
 ﻿using ConsoleApp1.Binding;
 using ConsoleApp1.ExampleOneInterface;
+using ConsoleApp1.ExampleTwoInterface;
 using ConsoleApp1.Interface;
 
 namespace ConsoleApp1
@@ -142,6 +143,29 @@ namespace ConsoleApp1
 
             ////SeriesToPrintFiveNumbers(S1);
             //SeriesToPrintFiveNumbers(S2);
+
+            #endregion
+
+            #region Interface exmple 02
+
+            //Car car = new Car();
+
+            //car.speed = 100;
+            //car.forward();
+            //car.backward();
+            //car.turnLeft();
+            //car.turnRight();
+
+            //AirPlane airPlane = new AirPlane();
+            //airPlane.speed = 200;
+            //airPlane.forward();
+            //airPlane.backward();
+            //airPlane.turnLeft();
+            //airPlane.turnRight();
+
+            //IMoveOnAir moveOnAir = new AirPlane();
+            //IMoveOnGround moveOnGround01 = new Car();
+            //IMoveOnGround moveOnGround02 = new AirPlane();
 
             #endregion 
         }
