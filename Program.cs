@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1.Binding;
+using ConsoleApp1.Built_In_Interface;
 using ConsoleApp1.ExampleOneInterface;
 using ConsoleApp1.ExampleTwoInterface;
 using ConsoleApp1.Interface;
@@ -167,7 +168,52 @@ namespace ConsoleApp1
             //IMoveOnGround moveOnGround01 = new Car();
             //IMoveOnGround moveOnGround02 = new AirPlane();
 
-            #endregion 
+            #endregion
+
+            #region Build In Interface
+
+            /*
+             *  IEnumerable : GetEnumerator() => Foreach
+             * 
+             *  ICollection : Methods to Add, Remove
+             * 
+             *  IList : Converting any type to Index
+             *  
+             *  IComparable : Compare two object
+             *  
+             *  IDisposable : Dispose() => Conection of Database [Close Conection]
+             *  
+             *  ICloneable : Clone()
+             *  
+             *  IComparable<T> : Compare()
+             *  
+             *  IReadOnlyCollection<T> : Count() , GetEnumerator()
+             *  
+             */
+
+            #region ICloneable()
+
+            //User User01 = new User() {Id = 1,Name = "John Doe", Salary = 50000};
+            //User User02 = new User() {Id = 2,Name = "Jane Doe", Salary = 60000};
+
+            //Console.WriteLine($"User 01: {User01.GetHashCode()}");
+            //Console.WriteLine($"User 02: {User02.GetHashCode()}");
+            //Console.WriteLine("==============================");
+            //Console.WriteLine(User01);
+            //Console.WriteLine(User02);
+            //Console.WriteLine("==============================");
+            //User02 = (User) User01.Clone();
+            //Console.WriteLine($"User 01: {User01.GetHashCode()}");
+            //Console.WriteLine($"User 02: {User02.GetHashCode()}");
+            //Console.WriteLine("==============================");
+            //Console.WriteLine(User01);
+            //Console.WriteLine(User02);
+
+            //Clone gentrate new object with same value but different in address in memory
+
+            #endregion
+
+            #endregion
         }
     }
 }
